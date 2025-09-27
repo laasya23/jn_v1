@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "server": "cd server && npm run dev",
+    "server:start": "cd server && npm start",
+    "server:seed": "cd server && npm run seed"
   },
   "dependencies": {
     "@aws-sdk/client-ses": "^3.682.0",
