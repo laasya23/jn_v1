@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme */
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    
+    /* Primary: Blue */
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+    
+    /* Secondary: Purple */
+    --secondary: 271 91% 65%;
+    --secondary-foreground: 210 40% 98%;
+    
+    /* Muted: Light Gray */
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    
+    /* Accent: Teal */
+    --accent: 172 66% 50%;
+    --accent-foreground: 222 47% 11%;
+    
+    /* Destructive: Red */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221 83% 53%;
+    
+    /* Chart Colors */
+    --chart-1: 221 83% 53%;  /* Blue */
+    --chart-2: 271 91% 65%;  /* Purple */
+    --chart-3: 172 66% 50%;  /* Teal */
+    --chart-4: 335 87% 51%;  /* Pink */
+    --chart-5: 27 96% 61%;   /* Orange */
+    
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Dark theme */
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    
+    /* Primary: Bright Blue */
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
+    
+    /* Secondary: Bright Purple */
+    --secondary: 271 91% 65%;
+    --secondary-foreground: 222 47% 11%;
+    
+    /* Muted: Dark Gray */
+    --muted: 223 47% 20%;
+    --muted-foreground: 215.4 16.3% 76.9%;
+    
+    /* Accent: Bright Teal */
+    --accent: 172 66% 50%;
+    --accent-foreground: 222 47% 11%;
+    
+    /* Destructive: Bright Red */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+
+    /* Chart Colors - Brighter for dark mode */
+    --chart-1: 217 91% 60%;  /* Bright Blue */
+    --chart-2: 271 91% 65%;  /* Bright Purple */
+    --chart-3: 172 66% 50%;  /* Bright Teal */
+    --chart-4: 335 87% 51%;  /* Bright Pink */
+    --chart-5: 27 96% 61%;   /* Bright Orange */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
