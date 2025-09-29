@@ -1,6 +1,6 @@
-# JNetworks Backend API
+# JNetworks Express.js Backend
 
-Express.js and MongoDB backend for the JNetworks Broadband website.
+Pure Express.js and MongoDB backend for the JNetworks Broadband website using only JavaScript.
 
 ## Features
 
@@ -107,3 +107,13 @@ Express.js and MongoDB backend for the JNetworks Broadband website.
 ## File Upload
 
 App logos are uploaded to `/public/assets/images/ott-partners/` with automatic filename generation and validation for image types only.
+
+## Technology Stack
+
+- **Runtime**: Node.js
+- **Framework**: Express.js
+- **Database**: MongoDB with Mongoose
+- **Authentication**: JWT with bcryptjs
+- **File Upload**: Multer
+- **Security**: Helmet, CORS, express-rate-limit
+- **Language**: JavaScript (ES6+)
