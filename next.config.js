@@ -1,24 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
   eslint: {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
+  experimental: {
+    esmExternals: false,
+  },
   webpack: (config, { isServer }) => {
-    // Conditionally apply client-only Webpack settings
-    if (!isServer) {
-      // Ignore fs module on client side to prevent Firebase SDK errors
-      config.resolve.fallback = {
-        ...config.resolve.fallback,
-        fs: false,
-      };
-    }
-
-    // Set alias for undici
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      undici: false,
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      fs: false,
+      net: false,
+      dns: false,
+      child_process: false,
+      tls: false,
     };
 
     return config;
