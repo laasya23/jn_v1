@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../ui/table';
-import { Plus, Edit, Trash2, Loader2 } from 'lucide-react';
+import { Plus, CreditCard as Edit, Trash2, Loader as Loader2 } from 'lucide-react';
 
 export function OTTPlansManager() {
   const [plans, setPlans] = useState([]);
